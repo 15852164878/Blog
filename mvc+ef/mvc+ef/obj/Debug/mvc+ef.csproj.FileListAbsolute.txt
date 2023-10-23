@@ -1,0 +1,128 @@
+C:\Users\LX\Desktop\mvc+ef\mvc+ef\bin\ApplicationInsights.config
+C:\Users\LX\Desktop\mvc+ef\mvc+ef\bin\roslyn\csc.exe
+C:\Users\LX\Desktop\mvc+ef\mvc+ef\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\LX\Desktop\mvc+ef\mvc+ef\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\LX\Desktop\mvc+ef\mvc+ef\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\LX\Desktop\mvc+ef\mvc+ef\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\LX\Desktop\mvc+ef\mvc+ef\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\LX\Desktop\mvc+ef\mvc+ef\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\LX\Desktop\mvc+ef\mvc+ef\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\LX\Desktop\mvc+ef\mvc+ef\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\LX\Desktop\mvc+ef\mvc+ef\bin\roslyn\vbc.exe
+C:\Users\LX\Desktop\mvc+ef\mvc+ef\bin\roslyn\VBCSCompiler.exe
+C:\Users\LX\Desktop\mvc+ef\mvc+ef\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\LX\Desktop\mvc+ef\mvc+ef\bin\mvc+ef.dll.config
+C:\Users\LX\Desktop\mvc+ef\mvc+ef\bin\mvc+ef.dll
+C:\Users\LX\Desktop\mvc+ef\mvc+ef\bin\mvc+ef.pdb
+C:\Users\LX\Desktop\mvc+ef\mvc+ef\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\LX\Desktop\mvc+ef\mvc+ef\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\LX\Desktop\mvc+ef\mvc+ef\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\LX\Desktop\mvc+ef\mvc+ef\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\LX\Desktop\mvc+ef\mvc+ef\bin\Microsoft.AI.Web.dll
+C:\Users\LX\Desktop\mvc+ef\mvc+ef\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\LX\Desktop\mvc+ef\mvc+ef\bin\Microsoft.ApplicationInsights.dll
+C:\Users\LX\Desktop\mvc+ef\mvc+ef\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\LX\Desktop\mvc+ef\mvc+ef\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\LX\Desktop\mvc+ef\mvc+ef\bin\System.Web.Helpers.dll
+C:\Users\LX\Desktop\mvc+ef\mvc+ef\bin\System.Web.Mvc.dll
+C:\Users\LX\Desktop\mvc+ef\mvc+ef\bin\System.Web.Razor.dll
+C:\Users\LX\Desktop\mvc+ef\mvc+ef\bin\System.Web.Webpages.Deployment.dll
+C:\Users\LX\Desktop\mvc+ef\mvc+ef\bin\System.Web.Webpages.dll
+C:\Users\LX\Desktop\mvc+ef\mvc+ef\bin\System.Web.Webpages.Razor.dll
+C:\Users\LX\Desktop\mvc+ef\mvc+ef\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\LX\Desktop\mvc+ef\mvc+ef\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\LX\Desktop\mvc+ef\mvc+ef\bin\Microsoft.AI.Web.xml
+C:\Users\LX\Desktop\mvc+ef\mvc+ef\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\LX\Desktop\mvc+ef\mvc+ef\bin\Microsoft.ApplicationInsights.xml
+C:\Users\LX\Desktop\mvc+ef\mvc+ef\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\LX\Desktop\mvc+ef\mvc+ef\bin\System.Web.Razor.xml
+C:\Users\LX\Desktop\mvc+ef\mvc+ef\bin\System.Web.Webpages.xml
+C:\Users\LX\Desktop\mvc+ef\mvc+ef\bin\System.Web.Webpages.Deployment.xml
+C:\Users\LX\Desktop\mvc+ef\mvc+ef\bin\System.Web.Webpages.Razor.xml
+C:\Users\LX\Desktop\mvc+ef\mvc+ef\bin\System.Web.Helpers.xml
+C:\Users\LX\Desktop\mvc+ef\mvc+ef\bin\System.Web.Mvc.xml
+C:\Users\LX\Desktop\mvc+ef\mvc+ef\obj\Debug\mvc+ef.dll
+C:\Users\LX\Desktop\mvc+ef\mvc+ef\obj\Debug\mvc+ef.pdb
+C:\Users\LX\Desktop\mvc+ef\mvc+ef\bin\zh-Hans\System.Web.Razor.resources.dll
+C:\Users\LX\Desktop\mvc+ef\mvc+ef\bin\zh-Hans\System.Web.Webpages.resources.dll
+C:\Users\LX\Desktop\mvc+ef\mvc+ef\bin\zh-Hans\System.Web.Webpages.Deployment.resources.dll
+C:\Users\LX\Desktop\mvc+ef\mvc+ef\bin\zh-Hans\System.Web.Webpages.Razor.resources.dll
+C:\Users\LX\Desktop\mvc+ef\mvc+ef\bin\zh-Hans\System.Web.Helpers.resources.dll
+C:\Users\LX\Desktop\mvc+ef\mvc+ef\bin\zh-Hans\System.Web.Mvc.resources.dll
+C:\Users\LX\Desktop\mvc+ef\mvc+ef\obj\Debug\mvc+ef.csprojResolveAssemblyReference.cache
+C:\Users\LX\Desktop\mvc+ef\mvc+ef\bin\EntityFramework.dll
+C:\Users\LX\Desktop\mvc+ef\mvc+ef\bin\EntityFramework.SqlServer.dll
+C:\Users\LX\Desktop\mvc+ef\mvc+ef\bin\EntityFramework.xml
+C:\Users\LX\Desktop\mvc+ef\mvc+ef\bin\EntityFramework.SqlServer.xml
+C:\Users\LX\Desktop\mvc+ef\mvc+ef\bin\zh-Hans\EntityFramework.resources.dll
+C:\Users\LX\Desktop\mvc+ef\mvc+ef\bin\zh-Hans\EntityFramework.SqlServer.resources.dll
+C:\Users\LX\Desktop\mvc+ef\mvc+ef\bin\Model.dll
+C:\Users\LX\Desktop\mvc+ef\mvc+ef\bin\Model.pdb
+C:\Users\LX\Desktop\mvc+ef\mvc+ef\bin\DLL.dll
+C:\Users\LX\Desktop\mvc+ef\mvc+ef\bin\DLL.pdb
+F:\项目合集\.net mvc+ef  (linq)\mvc+ef\mvc+ef\bin\ApplicationInsights.config
+F:\项目合集\.net mvc+ef  (linq)\mvc+ef\mvc+ef\bin\roslyn\csc.exe
+F:\项目合集\.net mvc+ef  (linq)\mvc+ef\mvc+ef\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+F:\项目合集\.net mvc+ef  (linq)\mvc+ef\mvc+ef\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+F:\项目合集\.net mvc+ef  (linq)\mvc+ef\mvc+ef\bin\roslyn\Microsoft.CodeAnalysis.dll
+F:\项目合集\.net mvc+ef  (linq)\mvc+ef\mvc+ef\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+F:\项目合集\.net mvc+ef  (linq)\mvc+ef\mvc+ef\bin\roslyn\Microsoft.CSharp.Core.targets
+F:\项目合集\.net mvc+ef  (linq)\mvc+ef\mvc+ef\bin\roslyn\Microsoft.VisualBasic.Core.targets
+F:\项目合集\.net mvc+ef  (linq)\mvc+ef\mvc+ef\bin\roslyn\System.Collections.Immutable.dll
+F:\项目合集\.net mvc+ef  (linq)\mvc+ef\mvc+ef\bin\roslyn\System.Reflection.Metadata.dll
+F:\项目合集\.net mvc+ef  (linq)\mvc+ef\mvc+ef\bin\roslyn\vbc.exe
+F:\项目合集\.net mvc+ef  (linq)\mvc+ef\mvc+ef\bin\roslyn\VBCSCompiler.exe
+F:\项目合集\.net mvc+ef  (linq)\mvc+ef\mvc+ef\bin\roslyn\VBCSCompiler.exe.config
+F:\项目合集\.net mvc+ef  (linq)\mvc+ef\mvc+ef\bin\mvc+ef.dll.config
+F:\项目合集\.net mvc+ef  (linq)\mvc+ef\mvc+ef\bin\mvc+ef.dll
+F:\项目合集\.net mvc+ef  (linq)\mvc+ef\mvc+ef\bin\mvc+ef.pdb
+F:\项目合集\.net mvc+ef  (linq)\mvc+ef\mvc+ef\bin\DLL.dll
+F:\项目合集\.net mvc+ef  (linq)\mvc+ef\mvc+ef\bin\EntityFramework.dll
+F:\项目合集\.net mvc+ef  (linq)\mvc+ef\mvc+ef\bin\EntityFramework.SqlServer.dll
+F:\项目合集\.net mvc+ef  (linq)\mvc+ef\mvc+ef\bin\Microsoft.AI.Agent.Intercept.dll
+F:\项目合集\.net mvc+ef  (linq)\mvc+ef\mvc+ef\bin\Microsoft.AI.DependencyCollector.dll
+F:\项目合集\.net mvc+ef  (linq)\mvc+ef\mvc+ef\bin\Microsoft.AI.PerfCounterCollector.dll
+F:\项目合集\.net mvc+ef  (linq)\mvc+ef\mvc+ef\bin\Microsoft.AI.ServerTelemetryChannel.dll
+F:\项目合集\.net mvc+ef  (linq)\mvc+ef\mvc+ef\bin\Microsoft.AI.Web.dll
+F:\项目合集\.net mvc+ef  (linq)\mvc+ef\mvc+ef\bin\Microsoft.AI.WindowsServer.dll
+F:\项目合集\.net mvc+ef  (linq)\mvc+ef\mvc+ef\bin\Microsoft.ApplicationInsights.dll
+F:\项目合集\.net mvc+ef  (linq)\mvc+ef\mvc+ef\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+F:\项目合集\.net mvc+ef  (linq)\mvc+ef\mvc+ef\bin\Microsoft.Web.Infrastructure.dll
+F:\项目合集\.net mvc+ef  (linq)\mvc+ef\mvc+ef\bin\Model.dll
+F:\项目合集\.net mvc+ef  (linq)\mvc+ef\mvc+ef\bin\System.Web.Helpers.dll
+F:\项目合集\.net mvc+ef  (linq)\mvc+ef\mvc+ef\bin\System.Web.Mvc.dll
+F:\项目合集\.net mvc+ef  (linq)\mvc+ef\mvc+ef\bin\System.Web.Razor.dll
+F:\项目合集\.net mvc+ef  (linq)\mvc+ef\mvc+ef\bin\System.Web.Webpages.Deployment.dll
+F:\项目合集\.net mvc+ef  (linq)\mvc+ef\mvc+ef\bin\System.Web.Webpages.dll
+F:\项目合集\.net mvc+ef  (linq)\mvc+ef\mvc+ef\bin\System.Web.Webpages.Razor.dll
+F:\项目合集\.net mvc+ef  (linq)\mvc+ef\mvc+ef\bin\DLL.pdb
+F:\项目合集\.net mvc+ef  (linq)\mvc+ef\mvc+ef\bin\DLL.dll.config
+F:\项目合集\.net mvc+ef  (linq)\mvc+ef\mvc+ef\bin\Model.pdb
+F:\项目合集\.net mvc+ef  (linq)\mvc+ef\mvc+ef\bin\Model.dll.config
+F:\项目合集\.net mvc+ef  (linq)\mvc+ef\mvc+ef\bin\EntityFramework.xml
+F:\项目合集\.net mvc+ef  (linq)\mvc+ef\mvc+ef\bin\EntityFramework.SqlServer.xml
+F:\项目合集\.net mvc+ef  (linq)\mvc+ef\mvc+ef\bin\Microsoft.AI.DependencyCollector.xml
+F:\项目合集\.net mvc+ef  (linq)\mvc+ef\mvc+ef\bin\Microsoft.AI.ServerTelemetryChannel.xml
+F:\项目合集\.net mvc+ef  (linq)\mvc+ef\mvc+ef\bin\Microsoft.AI.Web.xml
+F:\项目合集\.net mvc+ef  (linq)\mvc+ef\mvc+ef\bin\Microsoft.AI.WindowsServer.xml
+F:\项目合集\.net mvc+ef  (linq)\mvc+ef\mvc+ef\bin\Microsoft.ApplicationInsights.xml
+F:\项目合集\.net mvc+ef  (linq)\mvc+ef\mvc+ef\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+F:\项目合集\.net mvc+ef  (linq)\mvc+ef\mvc+ef\bin\System.Web.Razor.xml
+F:\项目合集\.net mvc+ef  (linq)\mvc+ef\mvc+ef\bin\System.Web.Webpages.xml
+F:\项目合集\.net mvc+ef  (linq)\mvc+ef\mvc+ef\bin\System.Web.Webpages.Deployment.xml
+F:\项目合集\.net mvc+ef  (linq)\mvc+ef\mvc+ef\bin\System.Web.Webpages.Razor.xml
+F:\项目合集\.net mvc+ef  (linq)\mvc+ef\mvc+ef\bin\System.Web.Helpers.xml
+F:\项目合集\.net mvc+ef  (linq)\mvc+ef\mvc+ef\bin\System.Web.Mvc.xml
+F:\项目合集\.net mvc+ef  (linq)\mvc+ef\mvc+ef\bin\zh-Hans\EntityFramework.resources.dll
+F:\项目合集\.net mvc+ef  (linq)\mvc+ef\mvc+ef\bin\zh-Hans\EntityFramework.SqlServer.resources.dll
+F:\项目合集\.net mvc+ef  (linq)\mvc+ef\mvc+ef\bin\zh-Hans\System.Web.Razor.resources.dll
+F:\项目合集\.net mvc+ef  (linq)\mvc+ef\mvc+ef\bin\zh-Hans\System.Web.Webpages.resources.dll
+F:\项目合集\.net mvc+ef  (linq)\mvc+ef\mvc+ef\bin\zh-Hans\System.Web.Webpages.Deployment.resources.dll
+F:\项目合集\.net mvc+ef  (linq)\mvc+ef\mvc+ef\bin\zh-Hans\System.Web.Webpages.Razor.resources.dll
+F:\项目合集\.net mvc+ef  (linq)\mvc+ef\mvc+ef\bin\zh-Hans\System.Web.Helpers.resources.dll
+F:\项目合集\.net mvc+ef  (linq)\mvc+ef\mvc+ef\bin\zh-Hans\System.Web.Mvc.resources.dll
+F:\项目合集\.net mvc+ef  (linq)\mvc+ef\mvc+ef\obj\Debug\mvc+ef.csproj.AssemblyReference.cache
+F:\项目合集\.net mvc+ef  (linq)\mvc+ef\mvc+ef\obj\Debug\mvc+ef.csproj.CoreCompileInputs.cache
+F:\项目合集\.net mvc+ef  (linq)\mvc+ef\mvc+ef\obj\Debug\mvc+ef.csproj.CopyComplete
+F:\项目合集\.net mvc+ef  (linq)\mvc+ef\mvc+ef\obj\Debug\mvc+ef.dll
+F:\项目合集\.net mvc+ef  (linq)\mvc+ef\mvc+ef\obj\Debug\mvc+ef.pdb

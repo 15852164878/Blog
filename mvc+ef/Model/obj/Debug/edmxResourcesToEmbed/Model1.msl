@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="MefModelStoreContainer" CdmEntityContainer="MefEntities">
+    <EntitySetMapping Name="users">
+      <EntityTypeMapping TypeName="MefModel.users">
+        <MappingFragment StoreEntitySet="users">
+          <ScalarProperty Name="uid" ColumnName="uid" />
+          <ScalarProperty Name="uname" ColumnName="uname" />
+          <ScalarProperty Name="upwd" ColumnName="upwd" />
+          <ScalarProperty Name="usex" ColumnName="usex" />
+          <ScalarProperty Name="udate" ColumnName="udate" />
+          <ScalarProperty Name="uiphone" ColumnName="uiphone" />
+          <ScalarProperty Name="uaddress" ColumnName="uaddress" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

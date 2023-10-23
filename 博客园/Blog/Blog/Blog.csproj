@@ -1,0 +1,473 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0946CFA0-FA72-485C-9EC3-B7C13B9F5A80}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Blog</RootNamespace>
+    <AssemblyName>Blog</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.Agent.Intercept, Version=1.2.0.1011, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Agent.Intercept.1.2.0\lib\net45\Microsoft.AI.Agent.Intercept.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.DependencyCollector, Version=1.2.3.246, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.DependencyCollector.1.2.3\lib\net45\Microsoft.AI.DependencyCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.PerfCounterCollector, Version=1.2.3.246, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.PerfCounterCollector.1.2.3\lib\net45\Microsoft.AI.PerfCounterCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.ServerTelemetryChannel, Version=1.2.3.246, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel.1.2.3\lib\net45\Microsoft.AI.ServerTelemetryChannel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.Web, Version=1.2.3.246, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Web.1.2.3\lib\net45\Microsoft.AI.Web.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.WindowsServer, Version=1.2.3.246, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.1.2.3\lib\net45\Microsoft.AI.WindowsServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationInsights, Version=1.2.3.490, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.1.2.3\lib\net45\Microsoft.ApplicationInsights.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Web.Razor">
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.3\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.3\lib\net45\System.Web.Webpages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages.Deployment">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.3\lib\net45\System.Web.Webpages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages.Razor">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.3\lib\net45\System.Web.Webpages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Helpers">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.3\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure">
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc">
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.3\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="css\a.css" />
+    <Content Include="css\admin.css" />
+    <Content Include="css\amazeui.min.css" />
+    <Content Include="css\bootstrap.min.css" />
+    <Content Include="css\comment.css" />
+    <Content Include="css\font-awesome.min.css" />
+    <Content Include="css\lstyle.css" />
+    <Content Include="css\main.css" />
+    <Content Include="css\mestyle.css" />
+    <Content Include="css\mya.css" />
+    <Content Include="css\normalize.css" />
+    <Content Include="css\nprogress.css" />
+    <Content Include="css\pl.css" />
+    <Content Include="css\plstyle.css" />
+    <Content Include="css\reset.css" />
+    <Content Include="css\sinaFaceAndEffec.css" />
+    <Content Include="css\Site.css" />
+    <Content Include="css\style.css" />
+    <Content Include="css\umeditor.css" />
+    <Content Include="css\ycbootstrap.css" />
+    <Content Include="css\zy.form.css" />
+    <Content Include="css\zy.layout.css" />
+    <Content Include="css\zy.menu.css" />
+    <Content Include="fonts\fontawesome-webfont.svg" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="fonts\TaurusNormal.svg" />
+    <Content Include="Global.asax" />
+    <Content Include="images\1.jpg" />
+    <Content Include="images\1.png" />
+    <Content Include="images\1.svg" />
+    <Content Include="images\2.svg" />
+    <Content Include="images\201610171329086541.png" />
+    <Content Include="images\201610181557196870.jpg" />
+    <Content Include="images\201610181739277776.jpg" />
+    <Content Include="images\201610241224221511.jpg" />
+    <Content Include="images\201610241227558789.jpg" />
+    <Content Include="images\3.svg" />
+    <Content Include="images\ad.jpg" />
+    <Content Include="images\backtop.png" />
+    <Content Include="images\bg.jpg" />
+    <Content Include="images\bg_1.jpg" />
+    <Content Include="images\caret.png" />
+    <Content Include="images\close.png" />
+    <Content Include="images\copy.png" />
+    <Content Include="images\enlarge.png" />
+    <Content Include="images\f1.png" />
+    <Content Include="images\f10.png" />
+    <Content Include="images\f11.png" />
+    <Content Include="images\f12.png" />
+    <Content Include="images\f13.png" />
+    <Content Include="images\f14.png" />
+    <Content Include="images\f15.png" />
+    <Content Include="images\f16.png" />
+    <Content Include="images\f17.png" />
+    <Content Include="images\f18.png" />
+    <Content Include="images\f19.png" />
+    <Content Include="images\f2.png" />
+    <Content Include="images\f20.png" />
+    <Content Include="images\f21.png" />
+    <Content Include="images\f22.png" />
+    <Content Include="images\f23.png" />
+    <Content Include="images\f24.png" />
+    <Content Include="images\f25.png" />
+    <Content Include="images\f26.png" />
+    <Content Include="images\f27.png" />
+    <Content Include="images\f28.png" />
+    <Content Include="images\f29.png" />
+    <Content Include="images\f3.png" />
+    <Content Include="images\f30.png" />
+    <Content Include="images\f31.png" />
+    <Content Include="images\f32.png" />
+    <Content Include="images\f33.png" />
+    <Content Include="images\f34.png" />
+    <Content Include="images\f35.png" />
+    <Content Include="images\f36.png" />
+    <Content Include="images\f37.png" />
+    <Content Include="images\f38.png" />
+    <Content Include="images\f39.png" />
+    <Content Include="images\f4.png" />
+    <Content Include="images\f40.png" />
+    <Content Include="images\f41.png" />
+    <Content Include="images\f42.png" />
+    <Content Include="images\f43.png" />
+    <Content Include="images\f44.png" />
+    <Content Include="images\f45.png" />
+    <Content Include="images\f46.png" />
+    <Content Include="images\f47.png" />
+    <Content Include="images\f48.png" />
+    <Content Include="images\f49.png" />
+    <Content Include="images\f5.png" />
+    <Content Include="images\f50.png" />
+    <Content Include="images\f51.png" />
+    <Content Include="images\f52.png" />
+    <Content Include="images\f53.png" />
+    <Content Include="images\f54.png" />
+    <Content Include="images\f55.png" />
+    <Content Include="images\f56.png" />
+    <Content Include="images\f57.png" />
+    <Content Include="images\f58.png" />
+    <Content Include="images\f59.png" />
+    <Content Include="images\f6.png" />
+    <Content Include="images\f7.png" />
+    <Content Include="images\f8.png" />
+    <Content Include="images\f9.png" />
+    <Content Include="images\face.png" />
+    <Content Include="images\favicon.ico" />
+    <Content Include="images\h1.png" />
+    <Content Include="images\h10.png" />
+    <Content Include="images\h11.png" />
+    <Content Include="images\h12.png" />
+    <Content Include="images\h13.png" />
+    <Content Include="images\h14.png" />
+    <Content Include="images\h15.png" />
+    <Content Include="images\h16.png" />
+    <Content Include="images\h17.png" />
+    <Content Include="images\h18.png" />
+    <Content Include="images\h19.png" />
+    <Content Include="images\h2.png" />
+    <Content Include="images\h20.png" />
+    <Content Include="images\h21.png" />
+    <Content Include="images\h22.png" />
+    <Content Include="images\h23.png" />
+    <Content Include="images\h24.png" />
+    <Content Include="images\h25.png" />
+    <Content Include="images\h26.png" />
+    <Content Include="images\h27.png" />
+    <Content Include="images\h28.png" />
+    <Content Include="images\h29.png" />
+    <Content Include="images\h3.png" />
+    <Content Include="images\h30.png" />
+    <Content Include="images\h31.png" />
+    <Content Include="images\h32.png" />
+    <Content Include="images\h33.png" />
+    <Content Include="images\h34.png" />
+    <Content Include="images\h35.png" />
+    <Content Include="images\h36.png" />
+    <Content Include="images\h37.png" />
+    <Content Include="images\h38.png" />
+    <Content Include="images\h39.png" />
+    <Content Include="images\h4.png" />
+    <Content Include="images\h40.png" />
+    <Content Include="images\h41.png" />
+    <Content Include="images\h42.png" />
+    <Content Include="images\h43.png" />
+    <Content Include="images\h44.png" />
+    <Content Include="images\h45.png" />
+    <Content Include="images\h46.png" />
+    <Content Include="images\h47.png" />
+    <Content Include="images\h48.png" />
+    <Content Include="images\h49.png" />
+    <Content Include="images\h5.png" />
+    <Content Include="images\h50.png" />
+    <Content Include="images\h51.png" />
+    <Content Include="images\h52.png" />
+    <Content Include="images\h53.png" />
+    <Content Include="images\h54.png" />
+    <Content Include="images\h55.png" />
+    <Content Include="images\h56.png" />
+    <Content Include="images\h57.png" />
+    <Content Include="images\h58.png" />
+    <Content Include="images\h59.png" />
+    <Content Include="images\h6.png" />
+    <Content Include="images\h60.png" />
+    <Content Include="images\h7.png" />
+    <Content Include="images\h8.png" />
+    <Content Include="images\h9.png" />
+    <Content Include="images\head.png" />
+    <Content Include="images\header-img-comment_03.png" />
+    <Content Include="images\icon-all_01.png" />
+    <Content Include="images\icon.png" />
+    <Content Include="images\icon1.png" />
+    <Content Include="images\icons.gif" />
+    <Content Include="images\icons.png" />
+    <Content Include="images\imglabel.png" />
+    <Content Include="images\loading.gif" />
+    <Content Include="images\localimage.png" />
+    <Content Include="images\music.png" />
+    <Content Include="images\news-icon.png" />
+    <Content Include="images\occupying.png" />
+    <Content Include="images\ok.gif" />
+    <Content Include="images\pic.png" />
+    <Content Include="images\pop-bg.png" />
+    <Content Include="images\spacer.gif" />
+    <Content Include="images\upload.png" />
+    <Content Include="images\videologo.gif" />
+    <Content Include="scripts\ai.0.15.0-build58334.js" />
+    <Content Include="scripts\ai.0.15.0-build58334.min.js" />
+    <Content Include="scripts\bootstrap.min.js" />
+    <Content Include="scripts\dialogs\emotion\emotion.css" />
+    <Content Include="scripts\dialogs\emotion\emotion.js" />
+    <Content Include="scripts\dialogs\emotion\images\0.gif" />
+    <Content Include="scripts\dialogs\emotion\images\bface.gif" />
+    <Content Include="scripts\dialogs\emotion\images\cface.gif" />
+    <Content Include="scripts\dialogs\emotion\images\fface.gif" />
+    <Content Include="scripts\dialogs\emotion\images\jxface2.gif" />
+    <Content Include="scripts\dialogs\emotion\images\neweditor-tab-bg.png" />
+    <Content Include="scripts\dialogs\emotion\images\tface.gif" />
+    <Content Include="scripts\dialogs\emotion\images\wface.gif" />
+    <Content Include="scripts\dialogs\emotion\images\yface.gif" />
+    <Content Include="scripts\dialogs\formula\formula.css" />
+    <Content Include="scripts\dialogs\formula\formula.html" />
+    <Content Include="scripts\dialogs\formula\formula.js" />
+    <Content Include="scripts\dialogs\formula\images\formula.png" />
+    <Content Include="scripts\dialogs\image\image.css" />
+    <Content Include="scripts\dialogs\image\image.js" />
+    <Content Include="scripts\dialogs\image\images\close.png" />
+    <Content Include="scripts\dialogs\image\images\upload1.png" />
+    <Content Include="scripts\dialogs\image\images\upload2.png" />
+    <Content Include="scripts\dialogs\link\link.js" />
+    <Content Include="scripts\dialogs\map\map.html" />
+    <Content Include="scripts\dialogs\map\map.js" />
+    <Content Include="scripts\dialogs\video\images\center_focus.jpg" />
+    <Content Include="scripts\dialogs\video\images\left_focus.jpg" />
+    <Content Include="scripts\dialogs\video\images\none_focus.jpg" />
+    <Content Include="scripts\dialogs\video\images\right_focus.jpg" />
+    <Content Include="scripts\dialogs\video\video.css" />
+    <Content Include="scripts\dialogs\video\video.js" />
+    <Content Include="scripts\hammer.js" />
+    <Content Include="scripts\html5shiv.min.js" />
+    <Content Include="scripts\iscroll-zoom.js" />
+    <Content Include="scripts\jquery-1.11.1.min.js" />
+    <Content Include="scripts\jquery-1.11.3.min.js" />
+    <Content Include="scripts\jquery-1.12.0.min.js" />
+    <Content Include="scripts\jquery-1.7.2.min.js" />
+    <Content Include="scripts\jquery-2.1.4.min.js" />
+    <Content Include="scripts\jquery-3.1.0.js" />
+    <Content Include="scripts\jquery-3.4.1.min.js" />
+    <Content Include="scripts\jquery.flexText.js" />
+    <Content Include="scripts\jquery.ias.js" />
+    <Content Include="scripts\jquery.lazyload.min.js" />
+    <Content Include="scripts\jquery.min.js" />
+    <Content Include="scripts\jquery.photoClip.min.js" />
+    <Content Include="scripts\lrz.all.bundle.js" />
+    <Content Include="scripts\lscript.js" />
+    <Content Include="scripts\my.js" />
+    <Content Include="scripts\nprogress.js" />
+    <Content Include="scripts\plugs\jquery.SuperSlide.source.js" />
+    <Content Include="scripts\plugs\JqueryMD5_DinJonYa.js" />
+    <Content Include="scripts\plugs\Jqueryplugs.js" />
+    <Content Include="scripts\plugs\JquerySQLDateToDate_DinJonYa.js" />
+    <Content Include="scripts\respond.min.js" />
+    <Content Include="scripts\script.js" />
+    <Content Include="scripts\scripts.js" />
+    <Content Include="scripts\selectivizr-min.js" />
+    <Content Include="scripts\umeditor.config.js" />
+    <Content Include="scripts\umeditor.js" />
+    <Content Include="scripts\umeditor.min.js" />
+    <Content Include="scripts\zh-cn.js" />
+    <Content Include="scripts\_layout.js" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\DefaultController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\web.config" />
+    <Content Include="packages.config" />
+    <Content Include="ApplicationInsights.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Views\Default\Index.cshtml" />
+    <Content Include="Views\Default\Iogin.cshtml" />
+    <Content Include="Views\Default\account.cshtml" />
+    <Content Include="Views\Default\information.cshtml" />
+    <Content Include="fonts\fontawesome-webfont.eot" />
+    <Content Include="fonts\fontawesome-webfont.ttf" />
+    <Content Include="fonts\fontawesome-webfont.woff" />
+    <Content Include="fonts\fontawesome-webfont.woff2" />
+    <Content Include="fonts\FontAwesome.otf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="fonts\TaurusNormal.ttf" />
+    <Content Include="fonts\TaurusNormal.woff" />
+    <Content Include="Views\Default\home.cshtml" />
+    <Content Include="Views\Default\link.cshtml" />
+    <Content Include="Views\Default\editLink.cshtml" />
+    <Content Include="Views\Default\news.cshtml" />
+    <Content Include="Views\Default\newsType.cshtml" />
+    <Content Include="Views\Default\publishblog.cshtml" />
+    <Content Include="Views\Default\dynamic.cshtml" />
+    <Content Include="Views\Default\addtype.cshtml" />
+    <Content Include="Views\Default\Details.cshtml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{4fe9a2f5-7299-4db1-9c8e-1be0b9576037}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>60459</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:60459/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>此项目引用这台计算机上缺少的 NuGet 程序包。使用 NuGet 程序包还原可下载这些程序包。有关详细信息，请参阅 http://go.microsoft.com/fwlink/?LinkID=322105。缺少的文件是 {0}。</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

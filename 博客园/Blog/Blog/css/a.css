@@ -1,0 +1,93 @@
+/*设置个人信息*/
+.sz-left {
+    text-align: center;
+    float: left;
+    background-color: rgb(226, 226, 226);
+    width: 20%;
+    height: 500px;
+    font-size: 18px;
+}
+
+.sz-left ul {
+    width: 100%;
+    height: 100%;
+    margin-top: 15px;
+}
+
+.sz-left li {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    padding-left: 20%;
+    clear: both;
+}
+
+.zh {
+    float: left;
+}
+
+.sz-right {
+    float: left;
+    height: 100%;
+    padding-left: 10%;
+    width: 80%;
+    padding-top: 3%;
+}
+
+.sz-right label {
+    font-size: 14px;
+    width: 100px;
+    text-align: right;
+    margin-right: 5px;
+    font-weight: normal;
+}
+
+.sz-right span {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.sz-right ul {
+    margin-top: 20px;
+    margin-left: 7%;
+}
+
+.sz-right ul li {
+    margin-top: 10px;
+}
+
+/*登录*/
+
+   .t span {
+            margin-top: -3px;
+            margin-left: 10px;
+        }
+
+        .tl {
+            
+            background-Color: rgb(230, 230, 230);
+            border-left: 1px solid #D1D1D1;
+            border-right: 1px solid #D1D1D1;
+            border-bottom: 1px solid #D1D1D1;
+            width: 90px;
+            height: 150px;
+            border-radius: 8px;
+            color: Black;
+            position: fixed;
+            right: auto;
+            z-index: 1;
+        }
+
+            .tl li {
+            
+                height: 35px;
+                padding: 0px 1px;
+                font-size: 14px;
+                line-height: 36px;
+            }
+               
+
+        .m {
+            margin-left: 5px;
+            color: red;
+        }

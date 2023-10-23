@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="BlogModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="bpub">
+    <Key>
+      <PropertyRef Name="bid" />
+    </Key>
+    <Property Name="bid" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="uid" Type="int" />
+    <Property Name="btitle" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="bcon" Type="varchar(max)" Nullable="false" />
+    <Property Name="btype" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="author" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="data" Type="date" />
+    <Property Name="bprotrait" Type="varchar(max)" />
+    <Property Name="count" Type="int" />
+  </EntityType>
+  <EntityType Name="btype">
+    <Key>
+      <PropertyRef Name="tid" />
+    </Key>
+    <Property Name="tid" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="uid" Type="int" />
+    <Property Name="tname" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="describe" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Comment">
+    <Key>
+      <PropertyRef Name="cid" />
+    </Key>
+    <Property Name="cid" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="uid" Type="int" Nullable="false" />
+    <Property Name="bid" Type="int" Nullable="false" />
+    <Property Name="hid" Type="int" />
+    <Property Name="conten" Type="varchar(max)" Nullable="false" />
+    <Property Name="cdate" Type="datetime" Nullable="false" />
+    <Property Name="znum" Type="int" />
+  </EntityType>
+  <EntityType Name="link">
+    <Key>
+      <PropertyRef Name="lid" />
+    </Key>
+    <Property Name="lid" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="uid" Type="int" Nullable="false" />
+    <Property Name="lname" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="laddress" Type="varchar" MaxLength="30" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Users">
+    <Key>
+      <PropertyRef Name="uid" />
+    </Key>
+    <Property Name="uid" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="uname" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="upass" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="email" Type="varchar" MaxLength="20" />
+    <Property Name="name" Type="varchar" MaxLength="20" />
+    <Property Name="sex" Type="nchar" MaxLength="10" />
+    <Property Name="date" Type="date" />
+    <Property Name="family" Type="varchar(max)" />
+    <Property Name="marriage" Type="varchar(max)" />
+    <Property Name="condition" Type="varchar(max)" />
+    <Property Name="portrait" Type="varchar(max)" />
+    <Property Name="nickname" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityContainer Name="BlogModelStoreContainer">
+    <EntitySet Name="bpub" EntityType="Self.bpub" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="btype" EntityType="Self.btype" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Comment" EntityType="Self.Comment" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="link" EntityType="Self.link" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Users" EntityType="Self.Users" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

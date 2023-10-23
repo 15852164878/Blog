@@ -1,0 +1,10 @@
+C:\Users\LX\Desktop\mvc5+ef6 练习\BLL\bin\Debug\BLL.dll
+C:\Users\LX\Desktop\mvc5+ef6 练习\BLL\bin\Debug\BLL.pdb
+C:\Users\LX\Desktop\mvc5+ef6 练习\BLL\obj\Debug\BLL.dll
+C:\Users\LX\Desktop\mvc5+ef6 练习\BLL\obj\Debug\BLL.pdb
+C:\Users\LX\Desktop\mvc5+ef6 练习\BLL\bin\Debug\BLL.dll.config
+C:\Users\LX\Desktop\mvc5+ef6 练习\BLL\bin\Debug\EntityFramework.dll
+C:\Users\LX\Desktop\mvc5+ef6 练习\BLL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\LX\Desktop\mvc5+ef6 练习\BLL\bin\Debug\EntityFramework.xml
+C:\Users\LX\Desktop\mvc5+ef6 练习\BLL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\LX\Desktop\mvc5+ef6 练习\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache

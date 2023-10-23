@@ -1,0 +1,14 @@
+C:\Users\LX\Desktop\mvc5+ef6 练习\DLL\bin\Debug\DLL.dll
+C:\Users\LX\Desktop\mvc5+ef6 练习\DLL\bin\Debug\DLL.pdb
+C:\Users\LX\Desktop\mvc5+ef6 练习\DLL\bin\Debug\BLL.dll
+C:\Users\LX\Desktop\mvc5+ef6 练习\DLL\bin\Debug\BLL.pdb
+C:\Users\LX\Desktop\mvc5+ef6 练习\DLL\obj\Debug\DLL.csprojResolveAssemblyReference.cache
+C:\Users\LX\Desktop\mvc5+ef6 练习\DLL\obj\Debug\DLL.dll
+C:\Users\LX\Desktop\mvc5+ef6 练习\DLL\obj\Debug\DLL.pdb
+C:\Users\LX\Desktop\mvc5+ef6 练习\DLL\bin\Debug\Model.dll
+C:\Users\LX\Desktop\mvc5+ef6 练习\DLL\bin\Debug\Model.pdb
+C:\Users\LX\Desktop\mvc5+ef6 练习\DLL\bin\Debug\DLL.dll.config
+C:\Users\LX\Desktop\mvc5+ef6 练习\DLL\bin\Debug\EntityFramework.dll
+C:\Users\LX\Desktop\mvc5+ef6 练习\DLL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\LX\Desktop\mvc5+ef6 练习\DLL\bin\Debug\EntityFramework.xml
+C:\Users\LX\Desktop\mvc5+ef6 练习\DLL\bin\Debug\EntityFramework.SqlServer.xml

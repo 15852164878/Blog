@@ -1,0 +1,241 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <meta charset="utf-8">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link href="~/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/css/nprogress.css" rel="stylesheet" />
+    <link href="~/css/style.css" rel="stylesheet" />
+    <link href="~/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="~/css/a.css" rel="stylesheet" />
+    <link rel="apple-touch-icon-precomposed" href="~/images/icon.png">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <script src="~/scripts/jquery-2.1.4.min.js"></script>
+    <script src="~/scripts/nprogress.js"></script>
+    <script src="~/scripts/jquery.lazyload.min.js"></script>
+    <script src="~/scripts/my.js"></script>
+    <link rel="stylesheet" href="https://apps.bdimg.com/libs/jquerymobile/1.4.5/jquery.mobile-1.4.5.min.css">
+
+
+</head>
+
+<body class="user-select">
+    <header class="header">
+        <nav class="navbar navbar-default" id="navbar">
+            <div class="container">
+                <div class="header-topbar hidden-xs link-border">
+                    <ul class="site-nav topmenu" style="margin-top: 15px;">
+                        <li><a href="tags.html">标签云</a></li>
+                        <li><a href="#" rel="nofollow">读者墙</a></li>
+                        <li>
+                            <a href="#" title="RSS订阅">
+                                <span class="ui-icon ui-icon-arrowthick-1-n"></span> RSS订阅
+                            </a>
+                        </li>
+                        <li class="t">
+
+                            <div style="padding:0;margin:0;">
+                                <div class="hea" style="padding:0;margin:0;width: 40px; height: 40px;margin-top:-10px; border-radius: 50%;">
+                                    <img src="~/images/head.png" style="height: 100%; width: 100%; border-radius: 50%;" />
+                                </div>
+                                @foreach (var i in ViewBag.Show)
+                                {
+                                    <div class="abc" style="width: 40px; height: 40px;margin-top:-10px; border-radius: 50%;">
+                                        <img class="ab" style="height: 100%; width: 100%; border-radius: 50%;" src="@i.portrait">
+                                    </div>
+
+                                }
+                            </div>
+                            <!--    <ul class="tl">
+                                <li style="border-top: 1px solid #E4ECF3;"><a href="login">个人中心</a></li>
+                                <li style="border-top: 1px solid #E4ECF3;"><a href="login"> 退出登录</a></li>
+                                <li style="border-top: 1px solid #E4ECF3;"><a href="login">个人中心</a></li>
+                                <li style="border-top: 1px solid #E4ECF3;"><a href="login"> 退出登录</a></li>
+                            </ul> -->
+
+                        </li>
+                        <li class="on">
+                            @foreach (var i in ViewBag.Show)
+                            {
+                                <p class="m">@i.uname</p>
+
+                            }
+
+                        </li>
+                        <li class="tw">
+                            @foreach (var i in ViewBag.Show)
+                            {
+                                <p class="m">@i.nickname</p>
+
+                            }
+
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#header-navbar" aria-expanded="false"> <span class="sr-only"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+                    <h1 class="logo hvr-bounce-in">
+                        <a href="Inde" title="博客园"><img src="~/images/201610171329086541.png" alt="博客园"></a>
+                    </h1>
+                </div>
+                <div class="collapse navbar-collapse" id="header-navbar">
+                    <form class="navbar-form visible-xs" action="/Search" method="post">
+                        <div class="input-group">
+                            <input type="text" name="keyword" class="form-control" placeholder="请输入关键字" maxlength="20" autocomplete="off">
+                            <span class="input-group-btn">
+                                <button class="btn btn-default btn-search" name="search" type="submit">搜索</button>
+                            </span>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="container">
+        <div class="sz-left">
+            <ul>
+                <li>
+                    <span class="zh">
+                        <svg width="1.4em" height="1.4em" viewBox="0 0 16 16" class="bi bi-person-check" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M8 5a2 2 0 1 1-4 0 2 2 0 0 1 4 0zM6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm6 5c0 1-1 1-1 1H1s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C9.516 10.68 8.289 10 6 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10zm4.854-7.85a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L12.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0z" />
+                        </svg>
+                        <a href="account"> 账号设置</a>
+                    </span>
+
+                </li>
+                <li style="background-color:rgb(240, 240, 240)">
+                    <span class="zh">
+                        <svg width="1.2em" height="1.2em" viewBox="0 0 16 16" class="bi bi-card-list" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M14.5 3h-13a.5.5 0 0 0-.5.5v9a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13z" />
+                            <path fill-rule="evenodd" d="M5 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 5 8zm0-2.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm0 5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5z" />
+                            <circle cx="3.5" cy="5.5" r=".5" />
+                            <circle cx="3.5" cy="8" r=".5" />
+                            <circle cx="3.5" cy="10.5" r=".5" />
+                        </svg>
+                        <a href="#" class="Chat right text fill"></a><a href="#">基本资料</a>
+                    </span>
+                </li>
+
+            </ul>
+
+
+        </div>
+        <div class="sz-right">
+            <form method="POST" >
+                <svg width="1em" style="color: blue;" height="1em" viewBox="0 0 16 16" class="bi bi-align-end" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M14.5 1a.5.5 0 0 0-.5.5v13a.5.5 0 0 0 1 0v-13a.5.5 0 0 0-.5-.5z" />
+                    <path d="M13 7a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V7z" />
+                </svg>
+                <span class="bj">基本资料</span>
+@foreach (var i in ViewBag.Show)
+{
+                <ul>
+                    <li>
+                        <label>  姓名:  </label>
+                        <input type="text" name="name" class="name" value="@i.name">
+                    </li>
+
+                    <li>
+                        <label>   性别:   </label>
+                        <input type="text" name="sex" class="sex" value="@i.sex">
+                        
+                        
+                    </li>
+
+                    <li>
+                        <label>    出生日期 : </label>
+                        <input type="text" name="date" class="date" value="@i.date">
+                    </li>
+
+                    <li>
+                        <label>   家乡: </label>
+                        <input type="text" name="famliy" class="famliy" value="@i.family">
+                    </li>
+
+                    <li>
+                        <label>   婚姻 :  </label>
+                        <input type="text" name="marriage" class="marriage" value="@i.marriage">
+                    </li>
+
+                    <li>
+                        <label>   工作状况:   </label>
+                        <input type="text" name="condition" class="condition" value="@i.condition">
+                    </li>
+
+
+
+                </ul>
+}
+                <button type="button" class="xg">修改</button>
+
+            </form>
+        </div>
+
+    
+
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <p>Copyright &copy; 2016.Company name All rights reserved.<a target="_blank" href="http://sc.chinaz.com/moban/">&#x7F51;&#x9875;&#x6A21;&#x677F;</a></p>
+        </div>
+        <div id="gotop">
+            <a class="gotop"></a>
+        </div>
+    </footer>
+    <script src="~/scripts/bootstrap.min.js"></script>
+    <script src="~/scripts/jquery.ias.js"></script>
+    <script src="~/scripts/script.js"></script>
+    <script>
+        $(".tl").hide();
+        $(".t").mouseenter(function() {
+            $(".tl").show();
+
+        });
+
+        $(".t").mouseleave(function() {
+            $(".tl").hide(500);
+        });
+    </script>
+    <script>
+        $(".xg").click(function () {
+                $.ajax({
+                    type: "POST",
+                    url: "/Default/inforupt",
+                    data: { name: $(".name").val(), sex: $(".sex").val(), date: $(".date").val(), famliy: $(".famliy").val(), marriage: $(".marriage").val(), condition: $(".condition").val() },
+                    datatype: "json",
+                    async: false,
+                    success: function (data) {
+
+                        alert("成功");
+                        window.location = "/Default/information";
+
+
+                    },
+                    error: function (data) {
+                        alert("异常");
+                    }
+
+                });
+
+            })
+    </script>
+   
+  
+</body>
+
+</html>

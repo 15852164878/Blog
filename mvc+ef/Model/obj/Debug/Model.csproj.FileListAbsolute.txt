@@ -1,0 +1,26 @@
+C:\Users\LX\Desktop\mvc+ef\Model\bin\Debug\Model.dll
+C:\Users\LX\Desktop\mvc+ef\Model\bin\Debug\Model.pdb
+C:\Users\LX\Desktop\mvc+ef\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
+C:\Users\LX\Desktop\mvc+ef\Model\obj\Debug\Model.dll
+C:\Users\LX\Desktop\mvc+ef\Model\obj\Debug\Model.pdb
+C:\Users\LX\Desktop\mvc+ef\Model\bin\Debug\Model.dll.config
+C:\Users\LX\Desktop\mvc+ef\Model\bin\Debug\EntityFramework.dll
+C:\Users\LX\Desktop\mvc+ef\Model\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\LX\Desktop\mvc+ef\Model\bin\Debug\EntityFramework.xml
+C:\Users\LX\Desktop\mvc+ef\Model\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\LX\Desktop\mvc+ef\Model\bin\Debug\zh-Hans\EntityFramework.resources.dll
+C:\Users\LX\Desktop\mvc+ef\Model\bin\Debug\zh-Hans\EntityFramework.SqlServer.resources.dll
+F:\项目合集\.net mvc+ef  (linq)\mvc+ef\Model\bin\Debug\Model.dll.config
+F:\项目合集\.net mvc+ef  (linq)\mvc+ef\Model\bin\Debug\Model.dll
+F:\项目合集\.net mvc+ef  (linq)\mvc+ef\Model\bin\Debug\Model.pdb
+F:\项目合集\.net mvc+ef  (linq)\mvc+ef\Model\bin\Debug\EntityFramework.dll
+F:\项目合集\.net mvc+ef  (linq)\mvc+ef\Model\bin\Debug\EntityFramework.SqlServer.dll
+F:\项目合集\.net mvc+ef  (linq)\mvc+ef\Model\bin\Debug\EntityFramework.xml
+F:\项目合集\.net mvc+ef  (linq)\mvc+ef\Model\bin\Debug\EntityFramework.SqlServer.xml
+F:\项目合集\.net mvc+ef  (linq)\mvc+ef\Model\bin\Debug\zh-Hans\EntityFramework.resources.dll
+F:\项目合集\.net mvc+ef  (linq)\mvc+ef\Model\bin\Debug\zh-Hans\EntityFramework.SqlServer.resources.dll
+F:\项目合集\.net mvc+ef  (linq)\mvc+ef\Model\obj\Debug\Model.csproj.AssemblyReference.cache
+F:\项目合集\.net mvc+ef  (linq)\mvc+ef\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
+F:\项目合集\.net mvc+ef  (linq)\mvc+ef\Model\obj\Debug\Model.csproj.CopyComplete
+F:\项目合集\.net mvc+ef  (linq)\mvc+ef\Model\obj\Debug\Model.dll
+F:\项目合集\.net mvc+ef  (linq)\mvc+ef\Model\obj\Debug\Model.pdb

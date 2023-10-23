@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="BlogModelStoreContainer" CdmEntityContainer="BlogEntities">
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="BlogModel.Users">
+        <MappingFragment StoreEntitySet="Users">
+          <ScalarProperty Name="nickname" ColumnName="nickname" />
+          <ScalarProperty Name="portrait" ColumnName="portrait" />
+          <ScalarProperty Name="condition" ColumnName="condition" />
+          <ScalarProperty Name="marriage" ColumnName="marriage" />
+          <ScalarProperty Name="family" ColumnName="family" />
+          <ScalarProperty Name="date" ColumnName="date" />
+          <ScalarProperty Name="sex" ColumnName="sex" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="upass" ColumnName="upass" />
+          <ScalarProperty Name="uname" ColumnName="uname" />
+          <ScalarProperty Name="uid" ColumnName="uid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="link">
+      <EntityTypeMapping TypeName="BlogModel.link">
+        <MappingFragment StoreEntitySet="link">
+          <ScalarProperty Name="laddress" ColumnName="laddress" />
+          <ScalarProperty Name="lname" ColumnName="lname" />
+          <ScalarProperty Name="uid" ColumnName="uid" />
+          <ScalarProperty Name="lid" ColumnName="lid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="btype">
+      <EntityTypeMapping TypeName="BlogModel.btype">
+        <MappingFragment StoreEntitySet="btype">
+          <ScalarProperty Name="describe" ColumnName="describe" />
+          <ScalarProperty Name="tname" ColumnName="tname" />
+          <ScalarProperty Name="uid" ColumnName="uid" />
+          <ScalarProperty Name="tid" ColumnName="tid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="bpub">
+      <EntityTypeMapping TypeName="BlogModel.bpub">
+        <MappingFragment StoreEntitySet="bpub">
+          <ScalarProperty Name="count" ColumnName="count" />
+          <ScalarProperty Name="bprotrait" ColumnName="bprotrait" />
+          <ScalarProperty Name="data" ColumnName="data" />
+          <ScalarProperty Name="author" ColumnName="author" />
+          <ScalarProperty Name="btype" ColumnName="btype" />
+          <ScalarProperty Name="bcon" ColumnName="bcon" />
+          <ScalarProperty Name="btitle" ColumnName="btitle" />
+          <ScalarProperty Name="uid" ColumnName="uid" />
+          <ScalarProperty Name="bid" ColumnName="bid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Comment">
+      <EntityTypeMapping TypeName="BlogModel.Comment">
+        <MappingFragment StoreEntitySet="Comment">
+          <ScalarProperty Name="znum" ColumnName="znum" />
+          <ScalarProperty Name="cdate" ColumnName="cdate" />
+          <ScalarProperty Name="conten" ColumnName="conten" />
+          <ScalarProperty Name="hid" ColumnName="hid" />
+          <ScalarProperty Name="bid" ColumnName="bid" />
+          <ScalarProperty Name="uid" ColumnName="uid" />
+          <ScalarProperty Name="cid" ColumnName="cid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

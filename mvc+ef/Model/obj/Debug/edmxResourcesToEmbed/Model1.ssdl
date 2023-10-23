@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="MefModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="users">
+    <Key>
+      <PropertyRef Name="uid" />
+    </Key>
+    <Property Name="uid" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="uname" Type="nchar" MaxLength="10" />
+    <Property Name="upwd" Type="varchar" MaxLength="50" />
+    <Property Name="usex" Type="nchar" MaxLength="10" />
+    <Property Name="udate" Type="date" />
+    <Property Name="uiphone" Type="int" />
+    <Property Name="uaddress" Type="nchar" MaxLength="50" />
+  </EntityType>
+  <EntityContainer Name="MefModelStoreContainer">
+    <EntitySet Name="users" EntityType="Self.users" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

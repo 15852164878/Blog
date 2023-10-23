@@ -1,0 +1,243 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="BlogModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="bpub">
+          <Key>
+            <PropertyRef Name="bid" />
+          </Key>
+          <Property Name="bid" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="uid" Type="int" />
+          <Property Name="btitle" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="bcon" Type="varchar(max)" Nullable="false" />
+          <Property Name="btype" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="author" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="data" Type="date" />
+          <Property Name="bprotrait" Type="varchar(max)" />
+          <Property Name="count" Type="int" />
+        </EntityType>
+        <EntityType Name="btype">
+          <Key>
+            <PropertyRef Name="tid" />
+          </Key>
+          <Property Name="tid" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="uid" Type="int" />
+          <Property Name="tname" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="describe" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="Comment">
+          <Key>
+            <PropertyRef Name="cid" />
+          </Key>
+          <Property Name="cid" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="uid" Type="int" Nullable="false" />
+          <Property Name="bid" Type="int" Nullable="false" />
+          <Property Name="hid" Type="int" />
+          <Property Name="conten" Type="varchar(max)" Nullable="false" />
+          <Property Name="cdate" Type="datetime" Nullable="false" />
+          <Property Name="znum" Type="int" />
+        </EntityType>
+        <EntityType Name="link">
+          <Key>
+            <PropertyRef Name="lid" />
+          </Key>
+          <Property Name="lid" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="uid" Type="int" Nullable="false" />
+          <Property Name="lname" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="laddress" Type="varchar" MaxLength="30" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Users">
+          <Key>
+            <PropertyRef Name="uid" />
+          </Key>
+          <Property Name="uid" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="uname" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="upass" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="email" Type="varchar" MaxLength="20" />
+          <Property Name="name" Type="varchar" MaxLength="20" />
+          <Property Name="sex" Type="nchar" MaxLength="10" />
+          <Property Name="date" Type="date" />
+          <Property Name="family" Type="varchar(max)" />
+          <Property Name="marriage" Type="varchar(max)" />
+          <Property Name="condition" Type="varchar(max)" />
+          <Property Name="portrait" Type="varchar(max)" />
+          <Property Name="nickname" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityContainer Name="BlogModelStoreContainer">
+          <EntitySet Name="bpub" EntityType="Self.bpub" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="btype" EntityType="Self.btype" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Comment" EntityType="Self.Comment" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="link" EntityType="Self.link" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Users" EntityType="Self.Users" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="BlogModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="BlogEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Users" EntityType="BlogModel.Users" />
+          <EntitySet Name="link" EntityType="BlogModel.link" />
+          <EntitySet Name="btype" EntityType="BlogModel.btype" />
+          <EntitySet Name="bpub" EntityType="BlogModel.bpub" />
+          <EntitySet Name="Comment" EntityType="BlogModel.Comment" />
+        </EntityContainer>
+        <EntityType Name="Users">
+          <Key>
+            <PropertyRef Name="uid" />
+          </Key>
+          <Property Name="uid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="uname" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="upass" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="email" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="name" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="sex" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="date" Type="DateTime" Precision="0" />
+          <Property Name="family" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="marriage" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="condition" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="portrait" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="nickname" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="link">
+          <Key>
+            <PropertyRef Name="lid" />
+          </Key>
+          <Property Name="lid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="uid" Type="Int32" Nullable="false" />
+          <Property Name="lname" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="laddress" Type="String" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="btype">
+          <Key>
+            <PropertyRef Name="tid" />
+          </Key>
+          <Property Name="tid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="uid" Type="Int32" />
+          <Property Name="tname" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="describe" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="bpub">
+          <Key>
+            <PropertyRef Name="bid" />
+          </Key>
+          <Property Name="bid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="uid" Type="Int32" />
+          <Property Name="btitle" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="bcon" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="btype" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="author" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="data" Type="DateTime" Precision="0" />
+          <Property Name="bprotrait" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="count" Type="Int32" />
+        </EntityType>
+        <EntityType Name="Comment">
+          <Key>
+            <PropertyRef Name="cid" />
+          </Key>
+          <Property Name="cid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="uid" Type="Int32" Nullable="false" />
+          <Property Name="bid" Type="Int32" Nullable="false" />
+          <Property Name="hid" Type="Int32" />
+          <Property Name="conten" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="cdate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="znum" Type="Int32" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="BlogModelStoreContainer" CdmEntityContainer="BlogEntities">
+          <EntitySetMapping Name="Users">
+            <EntityTypeMapping TypeName="BlogModel.Users">
+              <MappingFragment StoreEntitySet="Users">
+                <ScalarProperty Name="nickname" ColumnName="nickname" />
+                <ScalarProperty Name="portrait" ColumnName="portrait" />
+                <ScalarProperty Name="condition" ColumnName="condition" />
+                <ScalarProperty Name="marriage" ColumnName="marriage" />
+                <ScalarProperty Name="family" ColumnName="family" />
+                <ScalarProperty Name="date" ColumnName="date" />
+                <ScalarProperty Name="sex" ColumnName="sex" />
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="email" ColumnName="email" />
+                <ScalarProperty Name="upass" ColumnName="upass" />
+                <ScalarProperty Name="uname" ColumnName="uname" />
+                <ScalarProperty Name="uid" ColumnName="uid" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="link">
+            <EntityTypeMapping TypeName="BlogModel.link">
+              <MappingFragment StoreEntitySet="link">
+                <ScalarProperty Name="laddress" ColumnName="laddress" />
+                <ScalarProperty Name="lname" ColumnName="lname" />
+                <ScalarProperty Name="uid" ColumnName="uid" />
+                <ScalarProperty Name="lid" ColumnName="lid" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="btype">
+            <EntityTypeMapping TypeName="BlogModel.btype">
+              <MappingFragment StoreEntitySet="btype">
+                <ScalarProperty Name="describe" ColumnName="describe" />
+                <ScalarProperty Name="tname" ColumnName="tname" />
+                <ScalarProperty Name="uid" ColumnName="uid" />
+                <ScalarProperty Name="tid" ColumnName="tid" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="bpub">
+            <EntityTypeMapping TypeName="BlogModel.bpub">
+              <MappingFragment StoreEntitySet="bpub">
+                <ScalarProperty Name="count" ColumnName="count" />
+                <ScalarProperty Name="bprotrait" ColumnName="bprotrait" />
+                <ScalarProperty Name="data" ColumnName="data" />
+                <ScalarProperty Name="author" ColumnName="author" />
+                <ScalarProperty Name="btype" ColumnName="btype" />
+                <ScalarProperty Name="bcon" ColumnName="bcon" />
+                <ScalarProperty Name="btitle" ColumnName="btitle" />
+                <ScalarProperty Name="uid" ColumnName="uid" />
+                <ScalarProperty Name="bid" ColumnName="bid" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Comment">
+            <EntityTypeMapping TypeName="BlogModel.Comment">
+              <MappingFragment StoreEntitySet="Comment">
+                <ScalarProperty Name="znum" ColumnName="znum" />
+                <ScalarProperty Name="cdate" ColumnName="cdate" />
+                <ScalarProperty Name="conten" ColumnName="conten" />
+                <ScalarProperty Name="hid" ColumnName="hid" />
+                <ScalarProperty Name="bid" ColumnName="bid" />
+                <ScalarProperty Name="uid" ColumnName="uid" />
+                <ScalarProperty Name="cid" ColumnName="cid" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="无" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

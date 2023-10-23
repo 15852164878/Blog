@@ -1,0 +1,10 @@
+.pl {
+    width: 800px;
+    height: 500px;
+}
+
+.b {
+    width: 800px;
+    background-color: rgb(255, 255, 255);
+    height: auto;
+}
